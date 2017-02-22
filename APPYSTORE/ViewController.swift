@@ -1,25 +1,36 @@
-//
-//  ViewController.swift
-//  APPYSTORE
-//
-//  Created by BridgeLabz Solution LLP on 22/02/17.
-//  Copyright © 2017 BridgeLabz Solution LLP. All rights reserved.
-//
+//Purpose:History page
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
+    //MARK:IBOutlet
+    @IBOutlet var currentUserButton: UIButton!
+    
+    @IBOutlet var addCartButton: UIButton!
+    
+    @IBOutlet var settingButton: UIButton!
+    
+    @IBOutlet var searchButton: UIButton!
+    
+    @IBOutlet var collectionView: UICollectionView!
+    
+    //MARK:Variable Declaration
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   //number of items in collection
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
     }
-
+   //data for collection cellls
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        return cell
+    }
+    
 
 }
 

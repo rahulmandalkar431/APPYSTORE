@@ -15,6 +15,7 @@
 		70693CD81E5DAAFC007EABDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70693CD61E5DAAFC007EABDC /* LaunchScreen.storyboard */; };
 		70693CE31E5DAAFC007EABDC /* APPYSTORETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70693CE21E5DAAFC007EABDC /* APPYSTORETests.swift */; };
 		70693CEE1E5DAAFC007EABDC /* APPYSTOREUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70693CED1E5DAAFC007EABDC /* APPYSTOREUITests.swift */; };
+		70693D001E5DBB02007EABDC /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70693CFF1E5DBB02007EABDC /* VideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		70693CE91E5DAAFC007EABDC /* APPYSTOREUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APPYSTOREUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70693CED1E5DAAFC007EABDC /* APPYSTOREUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPYSTOREUITests.swift; sourceTree = "<group>"; };
 		70693CEF1E5DAAFC007EABDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70693CFF1E5DBB02007EABDC /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,8 @@
 		70693CC91E5DAAFC007EABDC /* APPYSTORE */ = {
 			isa = PBXGroup;
 			children = (
+				70693CFB1E5DAC56007EABDC /* History */,
 				70693CCA1E5DAAFC007EABDC /* AppDelegate.swift */,
-				70693CCC1E5DAAFC007EABDC /* ViewController.swift */,
 				70693CCE1E5DAAFC007EABDC /* Main.storyboard */,
 				70693CD41E5DAAFC007EABDC /* Assets.xcassets */,
 				70693CD61E5DAAFC007EABDC /* LaunchScreen.storyboard */,
@@ -126,6 +128,39 @@
 				70693CEF1E5DAAFC007EABDC /* Info.plist */,
 			);
 			path = APPYSTOREUITests;
+			sourceTree = "<group>";
+		};
+		70693CFB1E5DAC56007EABDC /* History */ = {
+			isa = PBXGroup;
+			children = (
+				70693CFD1E5DBA94007EABDC /* View */,
+				70693CFC1E5DBA7C007EABDC /* Model */,
+				70693CFE1E5DBAAC007EABDC /* Controller */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		70693CFC1E5DBA7C007EABDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70693CFD1E5DBA94007EABDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70693CFF1E5DBB02007EABDC /* VideoCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		70693CFE1E5DBAAC007EABDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70693CCC1E5DAAFC007EABDC /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70693CCD1E5DAAFC007EABDC /* ViewController.swift in Sources */,
+				70693D001E5DBB02007EABDC /* VideoCell.swift in Sources */,
 				70693CCB1E5DAAFC007EABDC /* AppDelegate.swift in Sources */,
 				70693CD31E5DAAFC007EABDC /* APPYSTORE.xcdatamodeld in Sources */,
 			);
